@@ -8,3 +8,5 @@ cd groonga
 ./configure --prefix=/usr/local --enable-debug --with-ruby --enable-mruby
 make -j8
 sudo make install
+echo /usr/local/lib | sudo sh -c 'cat > /etc/ld.so.conf.d/groonga.conf'
+sudo ldconfig
