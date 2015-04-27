@@ -7,3 +7,4 @@ cd groonga
 ./autogen.sh
 ./configure --prefix=/usr/local --enable-debug --with-ruby --enable-mruby
 make -j8
+sudo make install
